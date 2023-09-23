@@ -1,0 +1,210 @@
+/* 
+===================================
+SHARED CSS
+===================================
+*/
+
+html {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-size: 700px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f0f0f0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 90%;
+  min-width: 320px;
+  max-width: 700px;
+  padding: 50px 5%;
+  margin: 10px;
+  background-color: #ffffff;
+  border-radius: 30px 30px 100px 30px;
+  box-shadow: 0 0 5px #00000011;
+}
+
+/* 
+===================================
+INPUT SECTION
+===================================
+*/
+
+.input-section {
+  width: 100%;
+  max-width: 450px;
+
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+label {
+  display: block;
+  width: 30%;
+}
+
+p {
+  color: #14141499;
+  margin-bottom: 5px;
+}
+
+input {
+  font-size: 26px;
+  font-weight: 700;
+  height: 60px;
+  width: 100%;
+  padding: 10px;
+  color: #000;
+  border: 1px solid #00000055;
+  border-radius: 5px;
+}
+
+/* 
+===================================
+DIVIDER SECTION
+===================================
+*/
+
+.divider-section {
+  width: 100%;
+  position: relative;
+}
+
+hr {
+  margin: 70px 0;
+  border-color: #00000055;
+}
+
+button {
+  background-color: #854dff;
+  width: 70px;
+  height: 70px;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  top: -35px;
+  right: 42%;
+}
+
+button:hover {
+  background: #000;
+  cursor: pointer;
+}
+
+svg {
+  width: 30px;
+}
+
+/* 
+===================================
+OUTPUT SECTION
+===================================
+*/
+
+.large-text {
+  font-size: 50px;
+  line-height: 70px;
+  font-weight: 800;
+  font-style: italic;
+}
+
+span {
+  color: #854dff;
+}
+
+.attribution {
+  font-family: sans-serif;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+/*This removes the arrows from input type number elements*/
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/*ERROR STYLES*/
+
+.error-effect * {
+  color: #ff5757;
+  border-color: #ff5757;
+}
+
+.error-effect > input {
+  color: #000;
+}
+
+.error-message {
+  margin-top: 5px;
+  font-size: 10px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* 
+===================================
+BREAKPOINTS
+===================================
+*/
+@media (min-width: 425px) {
+  html {
+    font-size: 16px;
+  }
+
+  .large-text {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    padding: 50px;
+    border-radius: 30px 30px 150px 30px;
+  }
+
+  hr {
+    margin: 40px 0;
+  }
+
+  button {
+    top: -40px;
+    right: 0px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .large-text {
+    font-size: 74px;
+  }
+
+  .error-message {
+    font-size: 12px;
+  }
+}
